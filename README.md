@@ -35,7 +35,7 @@ python --version
 
 Follow the official ROS 2 Humble installation guide:
 
-[https://docs.ros.org/en/humble/Installation.html](https://docs.ros.org/en/humble/Installation.html)
+🔗[https://docs.ros.org/en/humble/Installation.html](https://docs.ros.org/en/humble/Installation.html)
 
 #### Quick install for Ubuntu 22.04:
 ```bash
@@ -55,7 +55,7 @@ source /opt/ros/humble/setup.bash
 
 Download and install Isaac Sim and Isaac Lab from the NVIDIA Omniverse website:
 
-[https://developer.nvidia.com/isaac-sim](https://developer.nvidia.com/isaac-sim)
+🔗[https://developer.nvidia.com/isaac-sim](https://developer.nvidia.com/isaac-sim)
 
 #### Installation Steps:
 1. Sign in to the NVIDIA Developer portal and download the installer for Isaac Sim.
