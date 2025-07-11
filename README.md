@@ -26,8 +26,10 @@ During installation:
 
 - Make sure to check **"Add Python to PATH"**.
 - Verify installation by running:
-
-`python --version`
+- 
+```bash
+python --version
+```
 
 
 ### **2. ROS 2 Humble**
