@@ -1,0 +1,6 @@
+source;share/wcr/hook/pythonpath.ps1
+source;share/wcr/hook/pythonpath.dsv
+source;share/wcr/hook/pythonpath.sh
+source;share/wcr/hook/ament_prefix_path.ps1
+source;share/wcr/hook/ament_prefix_path.dsv
+source;share/wcr/hook/ament_prefix_path.sh
