@@ -26,7 +26,6 @@ During installation:
 
 - Make sure to check **"Add Python to PATH"**.
 - Verify installation by running:
-- 
 ```bash
 python --version
 ```
@@ -45,11 +44,12 @@ sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o
 echo "deb [signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 sudo apt update
 sudo apt install ros-humble-desktop
+```
 
 #### After installation, set up the ROS 2 environment:
 ```bash
 source /opt/ros/humble/setup.bash
-
+```
 
 ### **3. NVIDIA Isaac Sim & Isaac Lab**
 
@@ -76,11 +76,13 @@ IsaacLab\source\isaaclab_tasks\isaaclab_tasks\direct
 To see training with a small number of environments:
 ```bash
 python3 scripts/reinforcement_learning/skrl/train.py --task Isaac-Wcr-Direct-v0 --num_envs 32
+```
 
 To accelerate training with more environments and headless mode (no graphical interface):
 
 ```bash
 python3 scripts/reinforcement_learning/skrl/train.py --task Isaac-Wcr-Direct-v0 --num_envs 4096 --headless
+```
 
 #### Playing:
 
@@ -88,3 +90,4 @@ To run the best policy learned to this point (requires at least some training to
 
 ```bash
 python3 scripts/reinforcement_learning/skrl/play.py --task Isaac-Leatherback-Direct-v0 --num_envs 32
+```
