@@ -65,9 +65,9 @@ Download and install Isaac Sim and Isaac Lab from the NVIDIA Omniverse website:
 > **Note:** Ensure your system meets the necessary hardware and software requirements listed on the NVIDIA website.
 
 
-Copy `wcr.py` and paste it into the following directory: IsaacLab\source\isaaclab_assets\isaaclab_assets\robots
+From Isaac Lab folder copy `wcr.py` and paste it into the following directory: IsaacLab\source\isaaclab_assets\isaaclab_assets\robots
 
-Copy the folder `wcr` and paste it into the following directory: 
+From Isaac Lab copy the folder `wcr` and paste it into the following directory: 
 IsaacLab\source\isaaclab_tasks\isaaclab_tasks\direct
 
 ### Train & Play (Linux commands)
