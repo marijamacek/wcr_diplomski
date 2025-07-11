@@ -2,7 +2,7 @@
 
 **Robotics Development with NVIDIA Isaac Sim, Isaac Lab, and ROS 2 Humble**
 
-This project leverages NVIDIA Isaac Sim and Isaac Lab for robotics simulation and development in the context of the 4WIS4WID WCR diploma project.
+This project leverages NVIDIA Isaac Sim and Isaac Lab for robotics simulation and development in the context of the 4WIS4WID WCR project.
 
 ---
 
