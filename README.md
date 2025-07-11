@@ -60,7 +60,7 @@ Download and install Isaac Sim and Isaac Lab from the NVIDIA Omniverse website:
 #### Installation Steps:
 1. Sign in to the NVIDIA Developer portal and download the installer for Isaac Sim.
 2. Follow the official installation instructions provided on the download page.
-3. To install Isaac Lab, follow the instructions in the Isaac Sim documentation or download it from the same page.
+3. To install Isaac Lab, follow the instructions follow the instructions provided here: https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html 
 
 > **Note:** Ensure your system meets the necessary hardware and software requirements listed on the NVIDIA website.
 
