@@ -29,61 +29,74 @@ During installation:
 
 ```bash
 python --version
-
-
-### **2. ROS 2 Humble**
-
+2. ROS 2 Humble
 Follow the official ROS 2 Humble installation guide:
 
-[https://docs.ros.org/en/humble/Installation.html](https://docs.ros.org/en/humble/Installation.html)
+🔗 https://docs.ros.org/en/humble/Installation.html
 
-#### Quick install for Ubuntu 22.04:
-```bash
+Quick install for Ubuntu 22.04:
+bash
+Copy
+Edit
 sudo apt update && sudo apt install curl gnupg lsb-release
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 sudo apt update
 sudo apt install ros-humble-desktop
-
-#### After installation, set up the ROS 2 environment:
-```bash
+After installation, set up the ROS 2 environment:
+bash
+Copy
+Edit
 source /opt/ros/humble/setup.bash
-
-
-### **3. NVIDIA Isaac Sim & Isaac Lab**
-
+3. NVIDIA Isaac Sim & Isaac Lab
 Download and install Isaac Sim and Isaac Lab from the NVIDIA Omniverse website:
 
-[https://developer.nvidia.com/isaac-sim](https://developer.nvidia.com/isaac-sim)
+🔗 https://developer.nvidia.com/isaac-sim
 
-#### Installation Steps:
-1. Sign in to the NVIDIA Developer portal and download the installer for Isaac Sim.
-2. Follow the official installation instructions provided on the download page.
-3. To install Isaac Lab, follow the instructions in the Isaac Sim documentation or download it from the same page.
+Installation Steps:
+Sign in to the NVIDIA Developer portal and download the installer for Isaac Sim.
 
-> **Note:** Ensure your system meets the necessary hardware and software requirements listed on the NVIDIA website.
+Follow the official installation instructions provided on the download page.
 
-Copy `wcr.py` and paste it into the following directory: IsaacLab\source\isaaclab_assets\isaaclab_assets\robots
+To install Isaac Lab, follow the instructions in the Isaac Sim documentation or download it from the same page.
 
-Copy the folder `wcr` and paste it into the following directory: 
+Note: Ensure your system meets the necessary hardware and software requirements listed on the NVIDIA website.
+
+Copy wcr.py and paste it into the following directory:
+
+bash
+Copy
+Edit
+IsaacLab\source\isaaclab_assets\isaaclab_assets\robots
+Copy the folder wcr and paste it into the following directory:
+
+bash
+Copy
+Edit
 IsaacLab\source\isaaclab_tasks\isaaclab_tasks\direct
-
-### Train & Play (Linux commands)
-
-#### Training:
-
+🏋️‍♂️ Train & Play (Linux commands)
+Training
 To see training with a small number of environments:
-```bash
-python3 scripts/reinforcement_learning/skrl/train.py --task Isaac-Wcr-Direct-v0 --num_envs 32
 
+bash
+Copy
+Edit
+python3 scripts/reinforcement_learning/skrl/train.py --task Isaac-Wcr-Direct-v0 --num_envs 32
 To accelerate training with more environments and headless mode (no graphical interface):
 
-```bash
+bash
+Copy
+Edit
 python3 scripts/reinforcement_learning/skrl/train.py --task Isaac-Wcr-Direct-v0 --num_envs 4096 --headless
+Playing
+To run the best policy learned to this point (requires at least some training to generate a .pth file):
 
-#### Playing:
-
-To run the best policy learned to this point (requires at least some training to generate a `.pth` file):
-
-```bash
+bash
+Copy
+Edit
 python3 scripts/reinforcement_learning/skrl/play.py --task Isaac-Leatherback-Direct-v0 --num_envs 32
+vbnet
+Copy
+Edit
+
+Let me know if you want me to add badges, contribution guidelines, or anything else!
